@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pico.css Peskovnik</title>
+  <!-- 1. PRAVILO: Ta ena vrstica vključi Pico.css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+  <!-- Začasna nastavitev za vajo, da se jasno vidijo učinek razreda container -->
+  <style>
+        .container { max-width: 750px; border: 2px dashed #0172ad; padding: 20px; }
+  </style>
+</head>
+<body>
+  <!-- 2. PRAVILO: container lepo sredinsko poravna stran -->
+  <div class="container-">
+    <h1>Moj prvi preizkus Pico.css s spremembo v 12 vrstici kode</h1>
+    <p>Ta stran uporablja samo navadne HTML značke brez lastnega CSS-ja.</p>
+
+    <!-- 3. PRAVILO: class="grid" postavi elemente v stolpce -->
+    <div class="grid">
+      <input type="number" placeholder="Vpiši ceno">
+
+      <input type="text" placeholder="Vpiši testno besedilo...">
+      
+      <select>
+        <option>Izbira 1</option>
+        <option>Izbira 2</option>
+      </select>
+      
+      <button>Navaden gumb</button>
+    
+    </div>
+
+    <!-- 4. PRAVILO: Navadna HTML tabela dobi sodoben videz -->
+    <h3>Preizkus tabele in gumbov za akcije</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Predmet</th>
+          <th>Cena</th>
+          <th>Akcije</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Kalkulator Casio</td>
+          <td>15,00 €</td>
+          <td>
+            <!-- 5. PRAVILO: role="button" spremeni povezavo v gumb -->
+            <a href="#" role="button" class="secondary">Pogled</a>
+            <a href="#" role="button" class="secondary">Uredi</a>
+          </td>
+        </tr>
+
+        <tr>
+          <td>Računalniška miška</td>
+          <td>10,00 €</td>
+          <td>
+            <!-- 5. PRAVILO: role="button" spremeni povezavo v gumb -->
+            <a href="#" role="button" class="secondary">Pogled</a>
+            <a href="#" role="button" class="secondary">Uredi</a>
+          </td>
+        </tr>
+
+
+      </tbody>
+    </table>
+
+    <form class="grid">
+      <input type="email" placeholder="Tvoj e-naslov" required>
+      <button type="submit">Prijavi me</button>
+    </form>
+
+
+  </div>
+</body>
+</html>

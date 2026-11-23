@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Šolski Oglasnik - Podrobnosti</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+</head>
+<body>
+  <main class="container">
+    <nav>
+      <ul><li><strong>🏫 Šolski Oglasnik</strong></li></ul>
+      <ul>
+        <li><a href="index.html">Oglasi</a></li>
+        <li><a href="dodaj.html" role="button">Dodaj oglas</a></li>
+      </ul>
+    </nav>
+
+    <a href="index.html">← Nazaj na vse oglase</a>
+    <hr>
+
+    <!-- POSTAVITEV PODROBNOSTI V DVA STOLPCA -->
+    <div class="grid">
+      <!-- Levi stolpec: Podatki o oglasu -->
+      <article>
+        <header>
+          <h2>Šolski kalkulator Casio</h2>
+          <small>Kategorija: Šolska oprema in pribor | Objavljeno: 19. 11. 2026</small>
+        </header>
+        <p>Odlično ohranjen grafični/znanstveni kalkulator, priložena navodila in zaščitni ovitek. Baterije so bile menjane prejšnji mesec.</p>
+        <footer>
+          <h3>Cena: 75,00 €</h3>
+        </footer>
+      </article>
+
+      <!-- Desni stolpec: Obrazec za povpraševanje (povezana entiteta) -->
+      <article>
+        <h4>Pošlji povpraševanje prodajalcu</h4>
+        <p><small>Zanima te ta oglas? Pošlji sporočilo avtorju.</small></p>
+        <form>
+          <label for="sporocilo">Tvoje sporočilo:</label>
+          <textarea id="sporocilo" name="vsebina" placeholder="Vpiši vprašanje ali ponudbo..." required></textarea>
+          <button type="submit">Pošlji sporočilo</button>
+        </form>
+      </article>
+    </div>
+  </main>
+</body>
+</html>

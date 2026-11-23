@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Šolski Oglasnik - Vsi oglasi</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+    <!-- Začasna nastavitev za vajo, da se jasno vidijo učinek razreda container -->
+  <style>
+        .container { max-width: 750px}
+  </style>
+</head>
+<body>
+  <main class="container">
+    <!-- GLAVNA NAVIGACIJA (Uporabili jo bomo na vseh straneh) -->
+    <nav>
+      <ul>
+        <li><strong>🏫 Šolski Oglasnik</strong></li>
+      </ul>
+      <ul>
+        <li><a href="index.html">Oglasi</a></li>
+        <li><a href="dodaj.html" role="button">Dodaj oglas</a></li>
+      </ul>
+    </nav>
+
+    <!-- NASLOV IN ISKALNIK -->
+    <header>
+      <h2>Aktualni šolski oglasi</h2>
+      <p>Iščite med objavljenimi oglasi ali jih filtrirajte po kategoriji.</p>
+      
+      <!-- Iskalnik v mrežni postavitvi (Grid) -->
+      <form class="grid">
+        <input type="search" name="iskanje" placeholder="Išči po naslovu ali opisu...">
+        <select name="kategorija">
+          <option value="">Vse kategorije</option>
+          <option value="1">Šolska oprema in pribor</option>
+          <option value="2">Učbeniki in literatura</option>
+        </select>
+        <button type="submit">Išči</button>
+      </form>
+    </header>
+
+    <!-- TABELA OGLASOV (Usklajeno z bazo in Sklopom 2) -->
+    <table class="striped">
+      <thead>
+        <tr>
+          <th>Naslov oglasa</th>
+          <th>Kategorija</th>
+          <th>Cena</th>
+          <th>Datum</th>
+          <th>Akcije</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Šolski kalkulator Casio</strong></td>
+          <td>Šolska oprema in pribor</td>
+          <td>75,00 €</td>
+          <td>19. 11. 2026</td>
+          <td>
+            <a href="oglas.html" role="button" class="secondary outline">👁️ Pogled</a>
+            <a href="dodaj.html" role="button" class="contrast outline">✏️ Uredi</a>
+          </td>
+        </tr>
+        <tr>
+          <td><strong>Matematika 3 - Delovni zvezek</strong></td>
+          <td>Učbeniki in literatura</td>
+          <td>12,00 €</td>
+          <td>06. 11. 2026</td>
+          <td>
+            <a href="oglas.html" role="button" class="secondary outline">👁️ Pogled</a>
+            <a href="dodaj.html" role="button" class="contrast outline">✏️ Uredi</a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
+</body>
+</html>
